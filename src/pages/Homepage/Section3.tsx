@@ -21,7 +21,7 @@ export default function Section3() {
               loading="lazy"
             />
             <Stack spacing={2}>
-              <Typography variant="caption">OUR CHAIRMAN</Typography>
+              <Typography variant="caption">CHAIRMAN</Typography>
               <Typography variant="h5" fontWeight={600}>
                 His Excellency, President Bola Ahmed Tinubu
               </Typography>

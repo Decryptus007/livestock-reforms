@@ -5,7 +5,7 @@ export default function CoChairman() {
   return (
     <Stack direction={{ md: "row" }} gap={{ xs: 4, lg: 10, xl: 14 }}>
       <Stack flex={1} spacing={2}>
-        <Typography color={"#186838"}>OUR CO-CHAIRMAN</Typography>
+        <Typography color={"#186838"}>CO-CHAIRMAN</Typography>
         <Typography variant="h5" fontWeight={600}>
           Prof Attahiru Jega
         </Typography>

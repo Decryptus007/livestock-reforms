@@ -30,10 +30,12 @@ export default function Footer() {
           >
             <Box component={"img"} maxWidth={294} src={NavLogo} pb={2} />
             <Typography variant="subtitle2">
-              Address goes here for more information
+              No. 2, Yakubu Gowon Crescent, Villa, Abuja
             </Typography>
-            <Typography variant="subtitle2">Email Address here</Typography>
-            <Typography variant="subtitle2">Phone Number Address</Typography>
+            <Typography variant="subtitle2">
+              info@livestockreformscommittee.gov.ng
+            </Typography>
+            <Typography variant="subtitle2">080***************</Typography>
             <Stack pt={2} gap={2} direction={"row"} flexWrap={"wrap"}>
               {socials.map((item, id) => (
                 <a href={item.url} key={id}>

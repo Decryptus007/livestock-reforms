@@ -16,7 +16,7 @@ export default function Section2() {
           justifyContent={"space-between"}
         >
           <Stack spacing={2} maxWidth={{ md: "50%" }}>
-            <Typography variant="caption">OUR CHAIRMAN</Typography>
+            <Typography variant="caption">CHAIRMAN</Typography>
             <Typography variant="h5" fontWeight={600}>
               His Excellency, President Bola Ahmed Tinubu
             </Typography>
@@ -61,7 +61,7 @@ export default function Section2() {
             loading="lazy"
           />
           <Stack spacing={2} maxWidth={{ md: "50%" }}>
-            <Typography variant="caption">OUR CO-CHAIRMAN</Typography>
+            <Typography variant="caption">CO-CHAIRMAN</Typography>
             <Typography variant="h5" fontWeight={600}>
               Prof Attahiru Jega
             </Typography>
