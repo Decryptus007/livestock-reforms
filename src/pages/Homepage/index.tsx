@@ -5,16 +5,19 @@ import News from "./News";
 import SocialSection from "./SocialSection";
 import Collabs from "./Collabs";
 import Hero from "./Hero";
+import BaseLayout from "../../components/BaseLayout";
 
 export default function HomePage() {
   return (
-    <Box>
-      <Hero />
-      <Section2 />
-      <Section3 />
-      <News />
-      <SocialSection />
-      <Collabs />
-    </Box>
+    <BaseLayout>
+      <Box>
+        <Hero />
+        <Section2 />
+        <Section3 />
+        <News />
+        <SocialSection />
+        <Collabs />
+      </Box>
+    </BaseLayout>
   );
 }

@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
-import EmbedDummy from "../../assets/dummy-embed.png";
+import { Tweet } from "react-tweet";
 
 export default function SocialSection() {
   return (
@@ -23,8 +23,8 @@ export default function SocialSection() {
               #WeASocial
             </Typography>
           </Box>
-          <Box width={{ md: "48%", lg: "30%" }}>
-            <Box component={"img"} src={EmbedDummy} />
+          <Box width={{ md: "48%", lg: "40%" }}>
+            <Tweet id="1810728080987525614" />
           </Box>
         </Stack>
       </Container>

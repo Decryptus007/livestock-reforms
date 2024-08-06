@@ -16,43 +16,45 @@ import Menu from "../assets/menu.svg";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ hideTopper }: { hideTopper?: boolean }) {
   const [isSideOpen, setIsSideOpen] = useState(false);
 
   return (
     <>
-      <Box display={{ xs: "none", md: "block" }} bgcolor={"#F9E5C5"} py={1}>
-        <Container>
-          <Stack
-            direction={"row"}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-          >
-            <Typography
-              variant="body2"
-              component={"a"}
-              href="mailto:info@Livestockreformcommittee.gov.ng"
+      {!hideTopper && (
+        <Box display={{ xs: "none", md: "block" }} bgcolor={"#F9E5C5"} py={1}>
+          <Container>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              justifyContent={"space-between"}
             >
-              info@Livestockreformcommittee.gov.ng
-            </Typography>
-            <Stack direction={"row"} alignItems={"center"} gap={1}>
-              <TextField
-                type="search"
-                size="small"
-                placeholder="Search"
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <Box component={"img"} src={SearchIcon} width={20} />
-                    </InputAdornment>
-                  ),
-                }}
-              />
-              <Button variant="contained">Search</Button>
+              <Typography
+                variant="body2"
+                component={"a"}
+                href="mailto:info@Livestockreformcommittee.gov.ng"
+              >
+                info@Livestockreformcommittee.gov.ng
+              </Typography>
+              <Stack direction={"row"} alignItems={"center"} gap={1}>
+                <TextField
+                  type="search"
+                  size="small"
+                  placeholder="Search"
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <Box component={"img"} src={SearchIcon} width={20} />
+                      </InputAdornment>
+                    ),
+                  }}
+                />
+                <Button variant="contained">Search</Button>
+              </Stack>
             </Stack>
-          </Stack>
-        </Container>
-      </Box>
+          </Container>
+        </Box>
+      )}
 
       <Box
         py={2}
