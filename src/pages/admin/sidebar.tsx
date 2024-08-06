@@ -32,6 +32,9 @@ export default function Sidebar() {
     setOpenLogoutMod(false);
   };
 
+  console.log(openLogoutMod, handleCloseLogoutMod);
+  console.clear();
+
   const handleSideBar = () => setIsSideOpen(!isSideOpen);
 
   return (
