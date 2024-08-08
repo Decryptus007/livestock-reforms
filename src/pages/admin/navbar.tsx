@@ -17,6 +17,8 @@ export default function AdminNavbar() {
       direction={"row"}
       alignItems={"center"}
       justifyContent={{ xs: "space-between", md: "end" }}
+      position={"relative"}
+      sx={{ boxShadow: "0px 2px 5px 0px #0000000D" }}
     >
       {/* <TextField
         placeholder="Search for anything"
@@ -46,7 +48,7 @@ export default function AdminNavbar() {
         justifyContent={"space-between"}
       >
         <Button
-          onClick={() => navigate("/admin/profile")}
+          onClick={() => navigate("/admin/dashboard")}
           sx={{ gap: 1, bgcolor: "#E0FCFF" }}
         >
           <Avatar />

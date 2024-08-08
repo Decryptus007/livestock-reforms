@@ -6,6 +6,8 @@ import LoadingPage from "./components/LoadingPage";
 const AboutUs = lazy(() => import("./pages/AboutUs/index"));
 const Signin = lazy(() => import("./pages/Signin"));
 const AdminDashboard = lazy(() => import("./pages/admin/dashboard/index"));
+const AdminUsers = lazy(() => import("./pages/admin/users/index"));
+const AdminUser = lazy(() => import("./pages/admin/users/user/index"));
 
 function App() {
   const { pathname } = useLocation();
@@ -39,6 +41,22 @@ function App() {
         element={
           <Suspense fallback={<LoadingPage />}>
             <AdminDashboard />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/admin/users"
+        element={
+          <Suspense fallback={<LoadingPage />}>
+            <AdminUsers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/admin/users/:userId"
+        element={
+          <Suspense fallback={<LoadingPage />}>
+            <AdminUser />
           </Suspense>
         }
       />

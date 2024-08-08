@@ -27,18 +27,16 @@ export default function RootLayout({
               "&::-webkit-scrollbar": {
                 width: 0,
               },
-              bgcolor: "#F5F5F5",
+              bgcolor: "#F4FEF9",
             }}
           >
             <Container
               sx={{
                 height: "100%",
                 overflowY: "auto",
-                maxWidth: { xs: "100dvw", xl: 1520 },
                 "&::-webkit-scrollbar": {
                   width: 0,
                 },
-                bgcolor: "#fff",
                 p: { xs: "0.5rem !important", md: "1rem !important" },
                 pb: "3rem !important",
                 pt: { xs: "1rem !important", md: 0 },
