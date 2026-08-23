@@ -51,7 +51,6 @@ export default function Section3() {
             <Stack mt={2} spacing={2}>
               {Array(3)
                 .fill("")
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 .map((_, id) => (
                   <Stack spacing={1} key={id}>
                     <Typography variant="h6">Prof Attahiru Jega</Typography>

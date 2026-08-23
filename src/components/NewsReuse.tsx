@@ -23,7 +23,6 @@ export default function NewsReuse() {
       <Stack mt={4} direction={"row"} gap={2} sx={{ overflowX: "auto" }}>
         {Array(4)
           .fill("")
-          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           .map((_, id) => (
             <Stack
               key={id}
