@@ -2,11 +2,12 @@ import { Box, Container, Stack } from "@mui/material";
 import Sidebar from "./sidebar";
 import AdminNavbar from "./navbar";
 import AdminLayout from "./admin-layout";
+import type { ReactNode } from "react";
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <AdminLayout>

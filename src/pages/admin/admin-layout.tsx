@@ -1,5 +1,4 @@
 /* eslint-disable no-constant-condition */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 // import { RootState } from "@/store";
